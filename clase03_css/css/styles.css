@@ -1,0 +1,17 @@
+body{
+    background-color:#eee;
+    font-family: arial;
+}
+.impar{
+    color: red;
+}
+.par{
+    color:blue;
+}
+p{
+    font-size: 16px;
+}
+.lista li{
+    font-weight: bold;
+    color: rgba(0, 128, 0, 0.501);
+}
