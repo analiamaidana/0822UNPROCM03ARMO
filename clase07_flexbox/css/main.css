@@ -1,0 +1,20 @@
+.padre{
+    background-color:blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.padre article {
+    background-color: rgba(255,0,0, 0.5);
+    width: 20%;
+}
+.verde, .padre .verde {
+    background-color: rgba(0,255,0, 0.5);
+}
+
+
+img{
+    width: 100%;
+}

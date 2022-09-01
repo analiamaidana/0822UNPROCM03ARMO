@@ -1,0 +1,32 @@
+/* versión adaptativa desktop*/
+
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction:row ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: grey;
+} 
+.container article{
+    width: 30%;
+}
+.primero{
+    background-color: red;
+}
+.segundo{
+    background-color:blue;
+}
+.tercero{
+    background-color:green;
+}
+@media (max-width:768px){
+    .container{
+    flex-direction: column;
+    }
+    .container article{
+        width: 100%;
+    }
+}
