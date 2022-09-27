@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Probando formularios</h1>
+    <form action="./bienvenido.html" method="get">
+        <input type="text" name="nombre" placeholder="ingrese su nombre" value="">
+        <input type="email"name="email" placeholder="ingrese su email" value="" required>
+
+    <h2>radio button</h2>
+    <h3>generos</h3>
+    <input type="radio" name="genero" value="fem"><label>Femenino</label>
+    <input type="radio" name="genero" value="masc"><label>Masculino</label>
+
+    <h2>checkbox</h2>
+    <h3>hobbies</h3>
+    <input type="checkbox" name="hobbies" value="tenis"><label>tenis</label>
+    <input type="checkbox" name="hobbies" value="rugby"><label>rugby</label>
+    <input type="checkbox" name="hobbies" value="futbol" checked><label>futbol</label>
+
+    <h2>select</h2>
+    <h3>nacionalidad</h3>
+    <select name="nacionalidad">
+        <option value="">Elija una opción</option>
+        <option value="arg">Argentina</option>
+        <option value="bra" selected>Brasil</option>
+    </select>
+    <h3>comentarios</h3>
+    <textarea name="comentarios"></textarea>
+        
+    <p><button type="submit">Enviar form</button></p>
+    
+
+
+    </form>
+</body>
+</html>
