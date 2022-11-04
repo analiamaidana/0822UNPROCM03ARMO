@@ -1,0 +1,150 @@
+/**********************************
+            GENERALES
+***********************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    font-family: 'Lilita One', cursive;
+    color: white;
+}
+
+img{
+    height: 100%;
+}
+
+/**********************************
+       SECCIÓN BIENVENIDA
+***********************************/
+
+.bienvenida {
+    background-image: url('../img/bg-image.jpg');
+    background-size: cover;
+    
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.bienvenida p {
+    font-size: 5rem;
+}
+
+.bienvenida span {
+    display: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.bienvenida article {
+    background-color: rgba(231, 177, 0, 0.8);
+    padding: 12px 0;
+}
+
+
+/**********************************
+       SECCIÓN PERSONAJES
+***********************************/
+
+.personajes {
+    background-image: url('../img/bg-pattern.jpg');
+    background-repeat: repeat-y;
+
+    display: none;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    color: black;
+}
+
+.personajes article {
+    width: 22%;
+    background-color: rgba(224, 224, 224, 0.486);
+    box-shadow: 0 8px 6px -6px black;
+    text-align: center;
+    padding-top: 12px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 960px) {
+    .personajes article {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .personajes article {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .personajes article {
+        width: 100%;
+    }
+}
+
+.personajes p {
+    margin-top: 18px;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.personajes p {
+    color: rgb(31, 31, 31);
+}
+
+.personajes article div {
+    height: 270px;
+    overflow: hidden;
+}
+
+.personajes span,
+.personajes i {
+    color: white;
+}
+
+.personajes span {
+    display: block;
+    background-color: rgb(83, 105, 233);
+    padding: 8px 0;
+}
+
+.personajes span i{
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.personaje-seleccionado {
+    background-color: rgba(231, 177, 0, 0.8)!important;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+/****************
+   Botón enviar
+****************/
+
+h3.boton {
+    color: black;
+    text-align: center;
+    padding: 12px 0;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(223, 190, 0, 0.918);
+    width: 100%;
+    cursor: pointer;
+}

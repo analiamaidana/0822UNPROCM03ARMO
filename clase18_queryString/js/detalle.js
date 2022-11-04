@@ -1,7 +1,7 @@
 let queryString = location.search; //Obtengo la QS
 let queryStringToObject = new URLSearchParams(queryString); //La trasnformo en OL
 let id = queryStringToObject.get('id'); //Obtengo los datos de una propiedad con get()
-
+console.log(id);
 
 let url = `https://rickandmortyapi.com/api/character/${id}`
 
