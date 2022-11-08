@@ -31,6 +31,3 @@ fetch(url)
 
 // 1 - crear un array para ir completando con datos
 let favoritos = [];
-
-// 2 - recupero datos del storage
-let recuperoStorage= localStorage.getItem("favoritos");
